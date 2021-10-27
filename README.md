@@ -1,5 +1,5 @@
-# AutoTranslation_ReverseGeocode
-This notebook walks through the auto translation and reverse geocoding processes.
+# Auto Translation and Reverse Geocoding
+This notebook walks through auto-translation and reverse-geocoding processes.
 
 ### Example:
 
