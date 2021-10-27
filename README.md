@@ -13,6 +13,8 @@ This notebook walks through auto-translation and reverse-geocoding processes.
 
 ### Use lat/lng to find zip code
 
+<img width="277" alt="Screen Shot 2021-10-27 at 1 41 05 PM" src="https://user-images.githubusercontent.com/44503223/139127036-efb04f4f-b7d9-4f63-b654-05ef15acfae7.png">
+
 ```python
 zipcodes=[]
 addresses=[]
