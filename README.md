@@ -11,6 +11,25 @@ This notebook walks through auto-translation and reverse-geocoding processes.
 
 <img width="641" alt="Screen Shot 2021-10-27 at 1 34 00 PM" src="https://user-images.githubusercontent.com/44503223/139125993-8c2fe34a-b5eb-482b-b44b-190a1a938440.png">
 
+### Use lat/lng to find zip code
+
+```python
+zipcodes=[]
+addresses=[]
+input_list=[]
+for i in sample['lat_lng']:
+    time.sleep(1)
+    try:
+        location = geolocator.reverse(str(i[0])+","+str(i[1]))
+        zipcodes.append(location.raw['address']['postcode'])
+        addresses.append(location.address)
+        input_list.append(i)
+    except:
+        input_list.append(i)
+        zipcodes.append('error')
+        addresses.append('error')
+```
+
 ### Reference:
 - googletrans https://pypi.org/project/googletrans/
 - GeoPy’s documentation https://geopy.readthedocs.io/en/stable/
